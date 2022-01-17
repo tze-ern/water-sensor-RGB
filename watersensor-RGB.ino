@@ -33,9 +33,9 @@ int readSensor() {
 
 //This is a function that makes the RGB change its color
 void rgbcolor() {
-  digitalWrite(11, r);
-  digitalWrite(10, g);
-  digitalWrite(9, LOW);
+  analogWrite(11, r);
+  analogWrite(10, g);
+  analogWrite(9, LOW);
 }
 
 void loop() {
