@@ -14,6 +14,7 @@ void setup() {
   // Set to LOW so no power flows through the sensor
   digitalWrite(sensorPower, LOW);
 
+  // Set 11, 10 ,9 as RGB
   pinMode(11, OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(9, OUTPUT);
@@ -30,7 +31,8 @@ int readSensor() {
   return val;             // send current reading
 }
 
-int rgbcolor() {
+//This is a function that makes the RGB change its color
+rgbcolor() {
   digitalWrite(11, r);
   digitalWrite(10, g);
   digitalWrite(9, LOW);
@@ -45,6 +47,7 @@ void loop() {
   
   delay(1000);
   
+  rgbcolor();
 }
 
 
