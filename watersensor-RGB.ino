@@ -32,7 +32,7 @@ int readSensor() {
 }
 
 //This is a function that makes the RGB change its color
-rgbcolor() {
+void rgbcolor() {
   digitalWrite(11, r);
   digitalWrite(10, g);
   digitalWrite(9, LOW);
